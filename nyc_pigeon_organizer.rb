@@ -11,7 +11,7 @@ def nyc_pigeon_organizer(data)
           data_organiser[name] = {}
         end
 
-      unless data_organiser.include?(name) && data_organiser.include?(key)
+      unless data_organiser.include?(name) && data_organiser[name].include?(key)
           data_organiser[name][key] = []
         end
 
